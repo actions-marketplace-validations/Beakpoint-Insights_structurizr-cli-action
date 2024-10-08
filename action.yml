@@ -1,6 +1,6 @@
 name: 'structurizr-cli-action'
 description: 'Runs structurizr command line application'
-author: 'Maksim Milykh'
+author: 'Alan Cox, Maksim Milykh'
 branding:
   icon: 'copy'
   color: 'blue'
@@ -36,9 +36,12 @@ inputs:
   archive:
     description: 'Whether to store the previous version of the remote workspace (optional; default to true)'
     required: false
+  branch:
+    description: 'To tell Structurizr Cloud the name of the branch'
+    required: false
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/aidmax/structurizr-cli-docker:latest'
+  image: 'docker://structurizr/cli:latest
   args:
     - 'push'
     - '-id'

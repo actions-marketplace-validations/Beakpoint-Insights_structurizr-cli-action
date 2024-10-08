@@ -45,6 +45,7 @@ jobs:
           passphrase: # The passphrase to use (optional; only required if client-side encryption enabled on the workspace)
           merge: # Whether to merge layout information from the remote workspace (optional: defaults to true)
           archive: # Whether to store the previous version of the remote workspace (optional; default to true)
+          branch: # To tell Structurizr Cloud the name of the branch
 ```
 
 ## Details
