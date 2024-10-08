@@ -1,6 +1,4 @@
-![test](https://github.com/aidmax/structurizr-cli-action/workflows/test/badge.svg)
-
-# structurizr-cli GitHub Action
+# bkpt-structurizr-cli GitHub Action
 
 This GitHub action allows you to run [structurizr-cli](https://github.com/structurizr/cli), a command line utility for [Structurizr](https://structurizr.com/) that lets you create software architecture models based upon the [C4 model](https://c4model.com/) using a textual [domain specific language (DSL)](https://github.com/structurizr/dsl).
 
@@ -25,13 +23,13 @@ on: [push, pull_request]
 jobs:
   structurizr-cli:
     runs-on: ubuntu-latest
-    name: Run structurizr-cli
+    name: Run bkpt-structurizr-cli
     steps:
 
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Run structurizr-cli action
+      - name: Run bkpt-structurizr-cli action
         uses: aidmax/structurizr-cli-action@v1
         id: test
         with:
@@ -48,14 +46,10 @@ jobs:
           branch: # To tell Structurizr Cloud the name of the branch
 ```
 
-## Details
-
-This action is based upon the Dockerfile created and maintained here
-<https://github.com/aidmax/structurizr-cli-docker>
 ## License
 
 The Dockerfile and associated scripts and documentation in this project are released under the [MIT](license).
 
 ## Credits
 
-The initial GitHub action has been created by [Maksim Milykh](https://github.com/aidmax).
+The initial GitHub action was been created by [Maksim Milykh](https://github.com/aidmax).

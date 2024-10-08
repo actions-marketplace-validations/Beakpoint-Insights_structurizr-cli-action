@@ -1,4 +1,4 @@
-name: 'structurizr-cli-action'
+name: 'bkpt-structurizr-cli-action'
 description: 'Runs structurizr command line application'
 author: 'Alan Cox, Maksim Milykh'
 branding:
