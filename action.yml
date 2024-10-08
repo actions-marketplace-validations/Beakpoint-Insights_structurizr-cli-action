@@ -41,7 +41,7 @@ inputs:
     required: false
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/aidmax/structurizr-cli-docker:latest'
+  image: 'docker://ghcr.io/sebastienfi/structurizr-cli-with-bonus:latest' 
   args:
     - 'push'
     - '-id'
