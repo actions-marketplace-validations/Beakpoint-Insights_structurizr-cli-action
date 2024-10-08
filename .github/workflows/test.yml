@@ -14,9 +14,9 @@ jobs:
         uses: ./
         id: test
         with:
-          id: ${{ secrets.STZR_ID }}
-          key: ${{ secrets.STZR_API_KEY }}
-          secret: ${{ secrets.STZR_API_SECRET }}
+          id: ${{ secrets.STRUCTURIZR_CLOUD_WORKSPACE_ID }}
+          key: ${{ secrets.STRUCTURIZR_CLOUD_KEY }}
+          secret: ${{ secrets.STRUCTURIZR_CLOUD_SECRET }}
           workspace: ./tests/workspace.dsl
           url: https://api.structurizr.com
           merge: false
