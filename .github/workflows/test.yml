@@ -21,3 +21,4 @@ jobs:
           url: https://api.structurizr.com
           merge: false
           archive: false
+          branch: ${{ github.ref_name }}

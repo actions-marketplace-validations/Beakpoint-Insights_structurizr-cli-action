@@ -36,6 +36,9 @@ inputs:
   archive:
     description: 'Whether to store the previous version of the remote workspace (optional; default to true)'
     required: false
+  branch:
+    description: 'What to call the branch in Structurizr Cloud'
+    required: false
 runs:
   using: 'docker'
   image: 'docker://ghcr.io/sebastienfi/structurizr-cli-with-bonus:latest' 
