@@ -60,3 +60,5 @@ runs:
     - ${{ inputs.merge }}
     - '-archive'
     - ${{ inputs.archive }}
+    - '-branch'
+    - ${{ inputs.branch }}
